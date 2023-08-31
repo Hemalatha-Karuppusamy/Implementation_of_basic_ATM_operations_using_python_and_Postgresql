@@ -19,7 +19,7 @@ values
 ('4567890123','ashutosh','4234',60000),
 ('5678901234','sarvesh','5234',70000),
 ('6789012345','harish','6234',80000);''')
-db.commit()"""
+db.commit()
 
 hema.execute('''create table if not exists bankoper(
 account_no varchar,
@@ -84,6 +84,9 @@ while True:
                         break
 
                 if oper == "5":
+                    break
+                else:
+                    print("Invalid selection\nYour logged out")
                     break
         else:
             print("Invalid Credentials try again")
